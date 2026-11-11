@@ -43,45 +43,9 @@ Certificado de conclusão com o nome do aluno, a logo da Soft System, CNPJ e ass
 Seção "Sobre o instrutor" e rodapé com os dados da empresa
 Layout responsivo, pensado para celular e computador, com letras grandes para facilitar a leitura
 🗂️ Arquivos
-.
-├── index.html   # o curso completo (HTML, CSS e JavaScript em um só arquivo, com a logo embutida)
-└── README.md
 
-O arquivo não tem dependências externas: não precisa de instalação, internet para bibliotecas ou servidor.
 
-▶️ Como usar
 
-Localmente: baixe o index.html e abra no navegador (Chrome, Edge, Firefox ou Safari).
-
-No GitHub Pages:
-
-Envie o index.html e o README.md para o repositório.
-Vá em Settings → Pages.
-Em Source, escolha a branch principal (main) e a pasta / (root).
-Salve. O curso ficará disponível em https://SEU-USUARIO.github.io/NOME-DO-REPOSITORIO/.
-
-Em plataformas de cursos (ex.: Hotmart): use o endereço publicado como aula na área de membros e anexe a apostila em PDF.
-
-🛠️ Como personalizar
-
-Tudo está dentro do index.html, na seção <script>.
-
-O que mudar	Onde procurar
-Textos das aulas, glossário e exercícios	Variáveis M, X, Y e Z
-Perguntas dos testes	Campo q de cada módulo em M
-Dúvidas frequentes	Variável F
-Objetivo e tempo de cada módulo	Variável O
-Instagram, CNPJ e nome do instrutor	Busque por softsysteminfo, 64.858.422/0001-85 e Jonatas Uchoas da Silva
-Carga horária do certificado	Variável hrs na função makeCert
-Rádios do topo (nomes e endereços das transmissões)	Variável RD
-Cores	Variáveis CSS no início de <style> (--y, --b, --o e outras)
-Logo	Atributo src da imagem no <header> (imagem em base64)
-
-Formato de um módulo:
-
-js
-{ t: "Título", i: "🧩", s: [ ["Título da aula", ["item 1", "item 2"]] ],
-  q: [ ["Pergunta?", ["opção A", "opção B"], indiceDaCorreta, "explicação"] ] }
 ⚠️ Observações
 Ajuda por IA: o campo "Pergunte à IA" só aparece em ambientes que oferecem esse recurso (como o Claude). Fora deles, ele fica oculto e o resto da ajuda continua funcionando.
 Certificado e progresso: são gerados e guardados no navegador do aluno. Para uso comercial com controle de conclusão, prefira liberar o certificado pela plataforma de ensino.
